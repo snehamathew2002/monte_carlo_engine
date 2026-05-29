@@ -1,4 +1,4 @@
-# 📊 Monte Carlo Portfolio Risk Engine
+# Monte Carlo Portfolio Risk Engine
 
 A Python-based quantitative finance project for simulating portfolio risk under different market conditions using Monte Carlo methods.
 
@@ -14,7 +14,7 @@ The project also includes stress-testing frameworks for analyzing portfolio beha
 
 ---
 
-# 🚀 Project Motivation
+# Project Motivation
 
 Traditional backtesting evaluates how a strategy performed historically.
 
@@ -30,7 +30,7 @@ This project was built to better understand:
 
 ---
 
-# 🧠 Core Quantitative Finance Concepts
+# Core Quantitative Finance Concepts
 
 ## 1. Stochastic Returns
 
@@ -69,9 +69,9 @@ These scenarios help analyze how risk metrics deteriorate under adverse market c
 
 ---
 
-# 📈 Risk Metrics Implemented
+# Risk Metrics Implemented
 
-## 📉 Value at Risk (VaR)
+## Value at Risk (VaR)
 
 Measures the worst expected portfolio threshold at a confidence level.
 
@@ -83,7 +83,7 @@ Meaning:
 
 ---
 
-## 📉 Conditional Value at Risk (CVaR)
+## Conditional Value at Risk (CVaR)
 
 Also called Expected Shortfall.
 
@@ -93,7 +93,7 @@ CVaR captures extreme downside risk more effectively than VaR.
 
 ---
 
-## 📉 Probability of Loss
+## Probability of Loss
 
 Measures how frequently simulated portfolios end below initial capital.
 
@@ -102,22 +102,7 @@ This represents:
 
 ---
 
-# 🏗️ Project Structure
-
-monte_carlo_engine/
-│
-├── engine/
-│   ├── simulator.py
-│
-├── utils/
-│   ├── stats.py
-│
-├── main.py
-├── README.md 
-
----
-
-# ▶️ How to Run
+# How to Run
   1. Clone repository
     git clone https://github.com/snehamathew2002/monte_carlo_engine.git
     cd monte_carlo_engine
@@ -127,6 +112,8 @@ monte_carlo_engine/
 
   3. Run project
     python main.py
+
+---
 
 # 🧠 Key Takeaways
   ## 1. Risk is distribution-based
@@ -146,6 +133,8 @@ monte_carlo_engine/
   ## 4. VaR and CVaR capture different dimensions of risk
       VaR identifies downside thresholds
       CVaR measures severity of extreme tail losses
+
+---
 
 # 📌 Author Notes
 
