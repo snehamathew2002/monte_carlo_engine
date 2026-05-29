@@ -72,33 +72,16 @@ These scenarios help analyze how risk metrics deteriorate under adverse market c
 # Risk Metrics Implemented
 
 ## Value at Risk (VaR)
-
-Measures the worst expected portfolio threshold at a confidence level.
-
-Example:
-> VaR(95%) = 8500
-
-Meaning:
-> 95% of simulations ended above $8500.
-
----
+    Measures the worst expected portfolio threshold at a confidence level.
 
 ## Conditional Value at Risk (CVaR)
-
-Also called Expected Shortfall.
-
-Measures the average portfolio value in the worst-case tail scenarios beyond VaR.
-
-CVaR captures extreme downside risk more effectively than VaR.
-
----
-
+    Also called Expected Shortfall.
+    Measures the average portfolio value in the worst-case tail scenarios beyond VaR.
+    CVaR captures extreme downside risk more effectively than VaR.
+    
 ## Probability of Loss
-
-Measures how frequently simulated portfolios end below initial capital.
-
-This represents:
-> likelihood of portfolio loss under simulated market conditions.
+    Measures how frequently simulated portfolios end below initial capital.
+    This represents the likelihood of portfolio loss under simulated market conditions.
 
 ---
 
@@ -136,7 +119,7 @@ This represents:
 
 ---
 
-# 📌 Author Notes
+# Author Notes
 
  ##  This project was built as part of exploring:
       > quantitative finance
