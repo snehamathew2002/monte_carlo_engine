@@ -5,8 +5,23 @@ portfolio return paths using Monte Carlo methods.
 """
 import numpy as np
 
-def generate_returns(mu, sigma, days):
+def normal_returns(mu, sigma, days):
     return np.random.normal(mu, sigma, days)
+
+def stress_returns(mu, sigma, days):
+    return np.random.normal(mu, sigma*3, days)
+
+def crash_returns(mu, sigma, days):
+    returns = []
+
+    for _ in range(days):
+        if np.random.rand() < 0.02:  # 2% chance of a crash
+            r = -0.08  # Large negative return
+        else:
+            r = np.random.normal(mu, sigma)  # Normal return
+        returns.append(r)
+
+    return returns
 
 def simulate_portfolio(initial, returns):
     portfolio = [initial]
@@ -16,13 +31,3 @@ def simulate_portfolio(initial, returns):
         portfolio.append(new_value)
 
     return portfolio
-
-def run_simulation(initial, mu, sigma, days, simulations):
-    all_simulations = []
-
-    for _ in range(simulations):
-        returns = generate_returns(mu, sigma, days)
-        portfolio_path = simulate_portfolio(initial, returns)
-        all_simulations.append(portfolio_path)
-
-    return all_simulations
